@@ -7,6 +7,9 @@ A process is an instance of a running program. Linux provides multiple utilities
 
 ### Viewing Processes
 - `ps aux` – View all running processes
+- `ps aux | nl` – count number of all running processes or `ps aux | wc -l`
+- `ps aux | grep processName(java)` - grep is a command to filter the output
+- `ps -ef` – View all running processes without showing memory utilization
 - `ps -u username` – View processes for a specific user
 - `ps -C processname` – Show a process by name
 - `pgrep processname` – Find a process by name and return its PID
@@ -15,7 +18,7 @@ A process is an instance of a running program. Linux provides multiple utilities
 ### Managing Processes
 - `kill PID` – Terminate a process by PID
 - `pkill processname` – Terminate a process by name
-- `kill -9 PID` – Force kill a process
+- `kill -9 PID` –  kill a process by Forcefully
 - `pkill -9 processname` – Kill all instances of a process
 - `kill -STOP PID` – Stop a running process
 - `kill -CONT PID` – Resume a stopped process
